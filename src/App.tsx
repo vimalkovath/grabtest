@@ -3,6 +3,14 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import Phone from './pages/Phone';
+import Cameraa from './pages/Cameraa';
+import Signup from './pages/Signup';
+import Payment from './pages/Payment';
+import Success from './pages/Success';
+import Invalid from './pages/Invalid';
+import Security from './pages/Security';
+import Signupcamera from './pages/Signupcamera';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -28,7 +36,15 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route path="/phone" component={Phone} exact={true} />
+        <Route path="/signup" component={Signup} exact={true} />
+        <Route path="/payment" component={Payment} exact={true} />
+        <Route path="/cameraa" component={Cameraa} exact={true} />
+        <Route path="/success" component={Success} exact={true} />
+        <Route path="/invalid" component={Invalid} exact={true} />
+        <Route path="/security" component={Security} exact={true} />
+        <Route path="/signupcamera" component={Signupcamera} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/payment" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
