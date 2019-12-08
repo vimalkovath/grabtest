@@ -47,7 +47,7 @@ const Security: React.FC = (props) => {
       </IonContent>
       <IonRow>
         <IonCol>
-          <IonButton routerLink="/success" className="next" color="Invalid" expand="block"> PAY</IonButton>
+          <IonButton routerLink="/success" className="next" color="success" expand="block"> VALIDATE</IonButton>
         </IonCol>
       </IonRow>
 

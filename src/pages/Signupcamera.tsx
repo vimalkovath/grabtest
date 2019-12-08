@@ -60,7 +60,7 @@ export class Signupcameraa extends Component {
   afterTakecall() {
     console.log('ionViewWillEnter event fired', this.state);
 
-    const time = new Date();
+    const time = new Date().getMilliseconds().toString();
     const obj = {
       timestamp: time,
       user_id: this.state.userId,
@@ -104,7 +104,7 @@ export class Signupcameraa extends Component {
             </IonContent>
           <IonRow>
             <IonCol>
-              <IonButton routerLink="/payment" className="next" color="success" expand="block">BILL PAY</IonButton>
+              <IonButton routerLink="/" className="next" color="success" expand="block">BILL PAY</IonButton>
             </IonCol>
           </IonRow>
 

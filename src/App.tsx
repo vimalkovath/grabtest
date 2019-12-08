@@ -37,14 +37,14 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route path="/home" component={Home} exact={true} />
         <Route path="/phone" component={Phone} exact={true} />
-        <Route path="/signup" component={Signup} exact={true} />
+        <Route path="/dashboard" component={Signup} exact={true} />
         <Route path="/payment" component={Payment} exact={true} />
         <Route path="/cameraa" component={Cameraa} exact={true} />
         <Route path="/success" component={Success} exact={true} />
         <Route path="/invalid" component={Invalid} exact={true} />
         <Route path="/security" component={Security} exact={true} />
         <Route path="/signupcamera" component={Signupcamera} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/payment" />} />
+        <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

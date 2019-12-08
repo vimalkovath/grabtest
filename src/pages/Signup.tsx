@@ -40,42 +40,36 @@ const Signup: React.FC= (props) => {
         <IonButtons slot="start">
         <img src="assets/g_400x400.png" className="gimageLogo" alt="Ionic logo" />
         </IonButtons>
-          <IonTitle>Signup</IonTitle>
+          <IonTitle>Dashboard</IonTitle>
         </IonToolbar>
       </IonHeader>
+
+
       <IonContent>
 
-        <div className="login-logo">
-        <img src="assets/g_400x400.png" className="gimage" alt="Ionic logo" />
-        </div>
+      <IonRow>  
+      <IonCol>
+        <IonButton routerLink="/phone" className="next" color="success" expand="block">Grab food</IonButton>
+      </IonCol>
+    </IonRow>
 
-        <form noValidate onSubmit={Signup}>
-          <IonList>
-            <IonItem>
-              <IonLabel position="stacked" color="primary">Phone No</IonLabel>
-              <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={e => {
-                setUsername(e.detail.value!);
-                setUsernameError(false);
-              }}
-                required>
-              </IonInput>
-            </IonItem>
+    <IonRow>  
+    <IonCol>
+      <IonButton routerLink="/phone" className="next" color="success" expand="block">Grab Express</IonButton>
+    </IonCol>
+  </IonRow>
 
-            {formSubmitted && usernameError && <IonText color="danger">
-              <p className="ion-padding-start">
-                Username is required
-              </p>
-            </IonText>}
+  <IonRow>  
+  <IonCol>
+    <IonButton routerLink="/phone" className="next" color="success" expand="block">Grab Bike</IonButton>
+  </IonCol>
+</IonRow>
 
-         
-          </IonList>
-
-          <IonRow>
-            <IonCol>
-              <IonButton type="submit" expand="block">Next</IonButton>
-            </IonCol>
-          </IonRow>
-        </form>
+<IonRow>  
+<IonCol>
+  <IonButton routerLink="/signupcamera" className="next" color="success" expand="block">New User </IonButton>
+</IonCol>
+</IonRow>
 
       </IonContent>
 

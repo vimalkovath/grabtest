@@ -22,13 +22,13 @@ const Success: React.FC = (props) => {
       <IonContent>
 
         <div className="login-logo" >
-        <img src="assets/g_400x400.png" className="gimage" alt="Ionic logo" />
+        <img src="assets/tk.png" className="tikimage" alt="Ionic logo" />
         </div>
 
       </IonContent>
       <IonRow>
       <IonCol>
-        <IonButton routerLink="/payment" className="next" color="success" expand="block">Return</IonButton>
+        <IonButton routerLink="/" className="next" color="success" expand="block">Return</IonButton>
       </IonCol>
     </IonRow>
 
