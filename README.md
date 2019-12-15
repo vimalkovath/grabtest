@@ -1,5 +1,5 @@
 
-# got irst prize on grbathone
+# got irst prize on grabathon
 
 # grabathone-2019-dec
 face pay app with react and ionic , 
